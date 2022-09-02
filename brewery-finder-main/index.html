@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inserted link's -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Find Your Brew</title>
+</head>
+<body>
+    <!-- header information -->
+    <div class="card">
+        <div class="card-header has-background-warning is-widescreen-full header-container lead-header">
+            <div class="mb-*1">
+                <p class="card-content has-text-black-bis has-text-centered is-size-1 pb-2 header-head">Find Your Brew!</p>
+                <p class="card-content has-text-black-bis has-text-centered is-size-4 p-0">Find a Brewery, Cidery, or Brewpub wherever you are headed!</p>
+                <p class="card-content has-text-black-bis pt-1">Whether you're searching your local town or heading to a new city, we've got you covered. Just search where you are going and BOOM: We present you with a local establishment</p>
+            </div>
+        </div>
+        <!-- Main Column 1, Search area with user parameters for optimal functionality -->
+        <div class="columns">
+            <div class="column is-one-quarter pr-0">
+                <div class="search-side">
+                    <h2 class="search-txt">Search for Cities</h2>
+                    <form id="search-form">
+                        <input type="text" placeholder="search..." id="city" class="is-size-4">
+                        <button class="my-3 is-size-4 search-btn" id="search-btn"><i class="fa-solid fa-beer"></i> Find your brew!</button>
+                    </form>
+                    <ul style="list-style-type:square">
+                        <h4 class="has-text-centered is-size-4 user-note-text">User Notes:</h4>
+                        <li class="p-3">When searching for a city like "St. Louis", make sure to spell out the full abbreviated name. (i.e: "Saint Louis")</li>
+                        <li class="p-3">Make sure to check the brewery type! This is a public resource and some places have since closed (or better, they may be in a planning phase, so check back and see if they are open!).</li>
+                        <li class="p-3">Always remember to find a ride if you have too much fun at your chosen establishment.
+                            <a href="https://uber.com">uber.com</a>
+                        </li>
+                        <li class="p-3">If you would like to recall saved data, for now, make sure to refresh the page.
+
+                    </ul>
+                    <!-- Future functionality -->
+                    <h3 class="has-text-centered is-size-5 saved-brewery-head">Saved Breweries Below:</h3>
+                    <div class="search-result" id="saved-locations">
+                    </div>
+                    <button class="is-size-6 button clear-btn" id="clear-btn"><i class="fa-solid fa-dumpster-fire"></i> Clear Save History!</button>
+                </div>
+            </div>
+            <!-- Section 2: Dynamically generated business cards and map information -->
+            <div class="column is-full pl-0">
+                <div class="column is-three-quarters result-head">
+                  <div class="column is-full">
+                    <h2 class="has-text-centered is-size-4 result-head-text">Results:</h2>
+                  </div>
+                </div>
+                <!-- Brewery container -->
+                <div class="columns" id="result-container">
+                    <div class="column is-one-third">
+                        <div class="result-list brewery-container" id="brewery-container"></div>
+                    </div>
+                    <!-- Map container -->
+                    <div class="column is-two-thirds">
+                        <div class="map-container" id="map-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- love these div waterfalls at the end -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnLQaZQJJSUlJR12J-vpuXghllvQP2nx4"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

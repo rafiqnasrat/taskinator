@@ -1,0 +1,179 @@
+:root {
+    --primary: #FFCB42;
+    --secondary: #FFB200;
+    --third: #277BC0;
+    --fourth: #FFF4CF;
+}
+
+.main-title{
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.lead-header {
+    background-color: #FFCB42;
+    background-image: linear-gradient(45deg, #fff4cf 0%, #ffb200 52%, #277BC0 95%);
+}
+.search-side {
+    background-color: var(--fourth);
+    background-image: linear-gradient(10deg, #ffb200 0%, #fff4cf 100%);
+    color: var(--third);
+    padding: 20px;
+    min-height: 700px;
+}
+
+.search-side input, .search-side button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-side input
+{
+    border: 1px solid teal;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.search-side button{
+    background-color: var(--third);
+    color: white;
+    border-radius: 30px;
+}
+
+.search-btn:hover {
+    background-color: #FFB200;
+    color: black;
+}
+
+.search-result p{
+    margin-top: 20px;
+    text-align: center;
+    background-color: silver;
+    font-size: 1.2em;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.sub-title{
+    background-color: rgb(58, 156, 156);
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+​
+.result-list{
+    background-color: rgb(22, 68, 68);
+    color: white;
+    padding: 15px;
+    min-height: 650px;
+    text-align: center;
+}
+.google-map{
+    background-color: rgb(204, 176, 176);
+}
+
+.brewery-card {
+    background-color: var(--primary);
+    color: black;
+    border-radius: 25px;
+}
+
+.result-head {
+    background-color: #277BC0;
+    background-image: linear-gradient(40deg, #fff4cf 0%, #ffb200 60%, #277BC0 99%);
+    color: var(--fourth);
+    width: 100%;
+}
+
+.save-btn {
+    background-color: var(--third);
+    color: var(--fourth);
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.save-btn:hover {
+    background-color: #FFF4CF;
+    color: #277BC0;
+}
+
+.header-head {
+    font-weight: 600;
+    font-family: 'Luminari', fantasy;
+    text-decoration: underline;
+    text-decoration-color: var(--third)
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    padding-left: 40px;
+    margin: 20px;
+}
+
+.brewery-container {
+    padding-left: 35px;
+    padding-top: 4px;
+}
+
+.result-head-text {
+    font-family: 'Luminari', fantasy;
+}
+
+.search-txt {
+    font-family: 'Luminari', fantasy;
+}
+
+.user-note-text {
+    font-family: 'Luminari', fantasy;
+}
+
+.saved-brewery-head {
+    font-family: 'Luminari', fantasy;
+}
+
+.saved-brewery {
+    margin: 5px;
+    background-color: #a9a9a9;
+    color: var(--third);
+    font-size: 17px;
+}
+
+.saved-brewery:hover {
+    background-color: var(--third);
+    color: #a9a9a9;
+
+}
+
+.clear-btn {
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: red;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+@media screen and (max-width: 575px) {
+    .map-container {
+        display: none;
+    }
+}
